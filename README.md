@@ -10,19 +10,16 @@ O meu projeto antigo [next-auth](https://github.com/vitormarkis/next-auth), eu p
 return (
   <html lang="en">
     <body>
-      <ReactQueryClientProvider>
-        {" "}
-        // diferente
+      <ReactQueryClientProvider> // diferente
         {children}
-      </ReactQueryClientProvider>{" "}
-      // diferente
+      </ReactQueryClientProvider> // diferente
     </body>
   </html>
 )
 ```
 
 3. O `` vem de outro arquivo que será importado
-4. **O ARQUIVO DE LAYOUT DO ROOT É SERVER COMPONENT, E DEVE SER ASSÍNCRONO, E O COMPONENTE CUSTOMIZADO QUE CONTORNO O CHILDREN, DEVE SER CLIENT COMPONENT**
+4. **O ARQUIVO DE LAYOUT DO ROOT É SERVER COMPONENT, E DEVE SER ASSÍNCRONO, E O COMPONENTE CUSTOMIZADO QUE CONTORNA O CHILDREN, DEVE SER CLIENT COMPONENT**
 
 > `src/services/queryClient.tsx`
 ```tsx
