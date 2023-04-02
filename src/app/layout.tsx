@@ -14,7 +14,9 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
+        <ReactQueryClientProvider>
+          {children}
+        </ReactQueryClientProvider>
       </body>
     </html>
   )
